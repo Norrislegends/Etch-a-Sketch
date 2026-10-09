@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    background-color: rgb(218, 199, 199);
+    font-family: "Press Start 2P", cursive;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: transparent;
+  cursor: pointer;
+  width: 180px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.1s ease;
+}
+button:hover{
+  transform: scale(1.1);
+}
+.colorPicker{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    background: none;
+    transition: transform 0.1s ease;
+    box-shadow: 3px 3px 8px gray;
+}
+.colorPicker::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+.colorPicker::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+.colorPicker:hover{
+  transform:scale(1.1);
+}
+.sizeSlider{
+  width: 180px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.toolPanel {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+.drawingSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.drawingSection h1 {
+    text-align: center;
+    margin: 0 0 40px;
+    font-size: 30px;
+}
+.mainArea {
+    display: grid;
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 3px 3px 8px gray;
+}
+

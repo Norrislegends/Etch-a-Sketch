@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <section class="toolPanel">
+            <input type="color" class="colorPicker">
+
+            <button class="colorBtn">Color Mode</button>
+            <button class="rainbowBtn">Rainbow Mode</button>
+            <button class="clearBtn">Clear</button>
+
+            <label class="sizeLabel" for="sizeSlider">Size</label>
+            <input type="range" class="sizeSlider" id="sizeSlider">
+        </section>
+
+        <div class="drawingSection">
+            <h1>Etch-a-Sketch</h1>
+            <div class="mainArea"></div>
+        </div>
+    </div>
+</body>
+</html>
